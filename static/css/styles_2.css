@@ -1,0 +1,226 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* Box Properties */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flex Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* Colour Properties */
+    background-color: #f0f0f0;
+    background-image: url('/static/background.jpg');
+}
+
+.container{
+    /* Box Properties */
+    width: 624.1860px;
+    height: 400px;
+    border-radius: 10px;
+
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* Position Properties */
+    position: relative;
+
+    /* Colour Properties */
+    background-color: white;
+}
+
+.splashtext{
+    /* Position Properties */
+    position: absolute;
+    top: 30px;
+
+    /* Text and Font Properties */
+    font-size: 39.8px;
+    font-family: Raleway, sans-serif;
+    font-weight: 650;
+}
+
+.formcontainer{
+    /* Box Properties */
+    width: 482.6788px;
+    height: 275px;
+
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* Position Properties */
+    position: absolute;
+    top: 125px;
+}
+
+.user_toggleswitch{
+    /* Box Properties */
+    width: 497.6744px;
+    height: 53.0232px;
+    border-radius: 53.0232px;
+
+    /* Display Properties */
+    display: flex;
+
+    /* Position Properties */
+    position: relative;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+}
+
+.user_toggleswitch::before{
+    content: "";
+
+    /* Box Properties */
+    width: 243.8872px;
+    height: 44.0232px;
+    border-radius: 53.0232px;
+    margin: 5px;
+
+    /* Position Properties */
+    position: absolute;
+
+    /* Colour Properties */
+    background-color: #051d40;
+
+    /* Transition Properties */
+    transition: 0.2s;
+}
+
+input:checked + .user_toggleswitch::before{
+    /* Transform Properties */
+    transform: translateX(243.8872px);
+}
+
+#student{
+    /* Box Properties */
+    width: 243.8872px;
+    height: 44.0232px;
+
+    /* Text and Font Properties */
+    font-size: 19.8139px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+
+    /* Position Properties */
+    position: relative;
+    top: 22.0116px;
+    z-index: 1;
+
+    /* Tranform Properties */
+    transform: translateY(-12.5%);
+
+    /* Colour Properties */
+    color: #666769;
+}
+
+input:not(:checked) + .user_toggleswitch p#student{
+    /* Colour Properties */
+    color: #ffffff;
+}
+
+#faculty{
+    /* Box Properties */
+    width: 243.8872px;
+    height: 44.0232px;
+
+    /* Text and Font Properties */
+    font-size: 19.8139px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+
+    /* Position Properties */
+    position: relative;
+    top: 22.0116px;
+    z-index: 1;
+
+    /* Tranform Properties */
+    transform: translateY(-12.5%);
+
+    /* Colour Properties */
+    color: #666769;
+}
+
+input:checked + .user_toggleswitch p#faculty{
+    /* Colour Properties */
+    color: #ffffff;
+}
+
+#switch_user_type{
+    /* Display Properties */
+    display: none;
+}
+
+.textinput{
+    /* Box Properties */
+    width: 482.6788px;
+    height: 53.0232px;
+    padding: 0 0 0 15px;
+    border: none;
+    border-radius: 53.0232px;
+
+    /* Text and Font Properties */
+    font-size: 21.3px;
+    font-family: Raleway, sans-serif;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+    color: #666769;
+}
+
+.textinput::placeholder{
+    /* Postion Properties */
+    position: absolute;
+    left: 15px;
+}
+
+.formtoinput{
+    /* Flex Properties */
+    align-self: end;
+}
+
+#submit_button{
+    /* Box Properties */
+    width: 20px;
+    height: 20px;
+    border: 0.1px solid #666769;
+    border-radius: 50%;
+
+    /* Display Property */
+    display: inline-block;
+
+    /* Text and Font Properties */
+    font-size: 12px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+}
+
+.adminlogin#adminlogin{
+    background-color: #666769;
+    width: 6vw;
+    height: 3vh;
+    margin-left: 10vw;
+    margin-top: 80vh;
+
+}
+
+.adminlogin#adminlogin a{
+    text-decoration: none;
+    color: white;
+}

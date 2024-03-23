@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admin</title>
+    <link rel="stylesheet" type="text/css" href="static/css/Fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+    
+    <div class="headercont">
+        <div class="header" id="name_institute">
+            Student Admin
+        </div>
+        <div class="header" id="rotate1"></div>
+        <div class="header" id="rotate2"></div>
+    </div>
+    <a href="/register"><button id="register_button" class="register_button">Register</button></a>
+    <table style="text-align: center; border: 1px;">
+        <tr>
+            <td>Name</td>
+            <td>Reg No.</td>
+            <td>Contact</td>
+            <td>DOB</td>
+            <td>Email ID</td>
+            <td>Blood Group</td>
+            <td>Address</td>
+            <td>Father's Name</td>
+            <td>Father's Email</td>
+            <td>Father's Contact</td>
+            <td>Mother's Name</td>
+            <td>Mother's Email</td>
+            <td>Mother's Contact</td>
+            <td>Branch</td>
+            <td>Course</td>
+            <td>Admission Year</td>
+            <td>Category</td>
+            <td>Type</td>
+            <td>Subjects</td>
+            <td>Grades</td>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[7] }}</td>
+            <td>{{ row[8] }}</td>
+            <td>{{ row[9] }}</td>
+            <td>{{ row[10] }}</td>
+            <td>{{ row[11] }}</td>
+            <td>{{ row[12] }}</td>
+            <td>{{ row[13] }}</td>
+            <td>{{ row[17] }}</td>
+            <td>{{ row[18] }}</td>
+            <td>{{ row[19] }}</td>
+            <td>{{ row[20] }}</td>
+            <td>{{ row[21] }}</td>
+            <td>{{ row[22] }}</td>
+            <td>{{ row[23] }}</td>
+        </tr>
+        {% endfor %}        
+    </table>
+</body>
+</html>

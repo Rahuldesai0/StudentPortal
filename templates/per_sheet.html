@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Sheet</title>
+    <link rel="stylesheet" href="static/css/style_pr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="prheader">
+        <div class="header" id="name_institute">VEERMATA JIJABAI TECHNICAL INSTITUTE</div>
+        <div class="pr" id="name_sheet">PERFORMANCE SHEET</div>
+    </div>
+    <hr>
+    <div class="content">
+        <div class="profile" id="circle">
+            <img src="static/profile_pic.png" alt="profile picture">
+        </div>
+        <div class="detail">
+            <div class="name" id="name">Name:   {{name}}</div>
+            <div class="branch" id="branch">Branch: {{branch}}</div>
+            <div class="year" id="year">Year:   {{year}}</div>
+            <div class="idno" id="idno">ID No.: {{id}}</div>
+        </div>
+        <h2>Academic Details</h2>
+        <table>
+            <tr>
+                <td>{{subjects}}</td>
+                <td>{{grades}}</td>
+            </tr>
+        </table>
+        <button id="print" class="print"><a href="/print">Print</a></button>
+    </div>
+</body>
+</html> 
+

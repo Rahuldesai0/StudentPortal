@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student Details</title>
+    <link rel="stylesheet" href="\static\css\styles_home.css">
+    <link rel="stylesheet" href="\static\css\add_student.css">
+    <link rel="stylesheet" href="\static\css\Fonts\fonts.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="splashtext"><p>Student Details</p></div>
+
+<div class="detailing" id="student_details">
+    <p>Personal Details</p>
+    <hr>
+
+    <form id="student" class="detail_form" method="POST" action="/registered">
+        <label for="student_name" id="student_name">Name:</label>
+        <input type="text" name="Student Name"
+        id="student_name" required>
+
+        <label for="student_contact" id="student_contact">Contact No.:</label>
+        <input type="tel" name="Student Contact Number" id="student_contact" required>
+
+        <label for="student_dob" id="student_dob">DOB:</label>
+        <input type="date" name="Student Birthday" id="student_dob" required>
+
+        <label for="student_email" id="student_email">E-Mail ID:</label>
+        <input type="email" name="Student E-Mail" id="student_email" required>
+
+        <label for="student_blood" id="student_blood">Blood group:</label>
+        <select name="Blood Group" id="student_blood" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+
+        <label for="student_health" id="student_health">Health Conditions:</label>
+        <input type="text" name="Student Health Conditions" id="student_health" placeholder="If None, please Ignore.">
+
+        <label for="student_address" id="student_address">Address:</label>
+        <textarea name="Student Address" id="student_address" cols="30" rows="3"></textarea required>        
+
+        
+        <!-- Parent Details -->
+
+        <label for="father_name" id="father_name">Father Name:</label>
+        <input type="text" name="Father Name"
+        id="father_name">
+
+        <label for="father_contact" id="father_contact">Contact No.:</label>
+        <input type="tel" name="Father Contact" id="father_contact">
+
+        <label for="father_email" id="father_email">E-Mail:</label>
+        <input type="email" name="Father Email" id="father_email">
+
+        <label for="mother_name" id="mother_name">Mother Name:</label>
+        <input type="text" name="Mother Name"
+        id="mother_name">
+
+        <label for="mother_contact" id="mother_contact">Contact No.:</label>
+        <input type="tel" name="Mother Contact" id="mother_contact">
+
+        <label for="mother_email" id="mother_email">E-Mail:</label>
+        <input type="email" name="Mother Email" id="mother_email">
+
+        <label for="guardian_name" id="guardian_name">Guardian Name:</label>
+        <input type="text" name="Guardian Name"
+        id="guardian_name">
+
+        <label for="guardian_contact" id="guardian_contact">Contact No.:</label>
+        <input type="tel" name="Guardian Contact" id="guardian_contact">
+
+        <label for="guardian_email" id="guardian_email">E-Mail:</label>
+        <input type="email" name="Guardian Email" id="guardian_email">
+
+        <!-- Course Details -->
+
+        <label for="branch_name" id="branch_name">Branch:</label>
+        <input type="text" name="Branch"
+        id="branch_name" required>
+
+        <label for="course_name" id="course_name">Course:</label>
+        <input type="text" name="Course"
+        id="course_name" required>
+
+        <label for="regn_num" id="regn_num">Regn. No.:</label>
+        <input type="number" name="Registration Num" id="regn_num" required min="0">
+
+
+        <label for="y_admission" id="y_admission">Year of Admission:</label>
+        <input type="number" name="Admission Year"  id="y_admission" required min="0">
+
+        <label for="y_current" id="y_current">Current Year:</label>
+        <input type="number" name="Current Year" id="y_current" required min="0">
+
+        <label for="category" id="category">Category:</label>
+        <input type="text" name="Category" id="category" required>
+
+        <label for="type_cat" id="type_cat">Type:</label>
+        <input type="text" name="Type" id="type_cat" required>
+
+        <label for="subject" id="subject">Subjects:</label>
+        <textarea name="Course Subjects" id="subject" cols="30" rows="10" required></textarea>
+
+        <label for="grades" id="grades">Grades:</label>
+        <textarea name="Course Grades" id="grades" cols="10" rows="10"></textarea>
+        
+        <label for="password" id="password">Password:</label>
+        <input type="password" name="Password" id="password" required>
+
+        <label for="submit"></label>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    <!-- Course Details Ender -->
+
+</div>
+<!-- Container Ender -->
+
+</body>
+</html>

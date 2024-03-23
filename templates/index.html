@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="static/css/Fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles_2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="splashtext">Login</div>
+
+        <form class="formcontainer" method="post" action="/submit">
+                <div class="user_toggleswitch_container">
+                    <input type="checkbox" name="Student-Teacher Selector" id="switch_user_type">
+            <label for="switch_user_type" class="user_toggleswitch"><p id="student" for="switch_user_type">Student</p><p id="faculty">Faculty</p></label>
+            </div>
+
+            <div>
+            <label for="user_id"></label>
+            <input type="number" name="User ID" id="user_id" class="textinput" placeholder="ID Number" min="0" required>
+            </div>
+
+            <div>
+            <label for="user_pass"></label>
+            <input type="password" name="User Password" id="user_pass" class="textinput" placeholder="Password" required>
+            </div>
+
+            <div class="formtoinput">
+            <label for="submit_button"></label>
+            <input type="submit" name="Submit Details" id="submit_button" value=">">
+            </div>
+        </form>
+    </div>
+    <button id="adminlogin" class="adminlogin"><a href="/admin">Admin</a></button>
+</body>
+</html>

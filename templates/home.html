@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="static/css/Fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body id="HOME">
+<main>
+    <div class="headercont">
+        <div class="header" id="name_institute">
+            <a href="https://vjti.ac.in/"> Veermata Jijabai Technological Institute </a></div>
+        <div class="header" id="rotate1"></div>
+        <div class="header" id="rotate2"></div>
+        <div class="headeritem" id="icon">
+            <a href="student_data.html">
+            <img src="static/profile_pic.png" alt="student profile"></a>
+            <a href="/logout"><button class="logout" id="logout">Log out</button></a>
+            
+        </div>
+    </div>
+
+    <div class="contentcont">
+        <div id="greeting">
+            Hello, {{name}}
+        </div>
+
+        <div id="performance_sheet">
+            <button name="performance_sheet"><a href="/performance">PERFORMANCE SHEET</a></button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
