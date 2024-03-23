@@ -4,7 +4,19 @@
 }
 
 body{
+    /* Box Properties */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flex Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* Colour Properties */
     background-color: #f0f0f0;
+    background-image: url('/static/background.jpg');
 }
 
 .container{
@@ -20,11 +32,7 @@ body{
     align-items: center;
 
     /* Position Properties */
-    position: absolute;
-    top: 50vh;
-    left: 25vw;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    position: relative;
 
     /* Colour Properties */
     background-color: white;
@@ -57,6 +65,105 @@ body{
     top: 125px;
 }
 
+.user_toggleswitch{
+    /* Box Properties */
+    width: 497.6744px;
+    height: 53.0232px;
+    border-radius: 53.0232px;
+
+    /* Display Properties */
+    display: flex;
+
+    /* Position Properties */
+    position: relative;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+}
+
+.user_toggleswitch::before{
+    content: "";
+
+    /* Box Properties */
+    width: 243.8872px;
+    height: 44.0232px;
+    border-radius: 53.0232px;
+    margin: 5px;
+
+    /* Position Properties */
+    position: absolute;
+
+    /* Colour Properties */
+    background-color: #051d40;
+
+    /* Transition Properties */
+    transition: 0.2s;
+}
+
+input:checked + .user_toggleswitch::before{
+    /* Transform Properties */
+    transform: translateX(243.8872px);
+}
+
+#student{
+    /* Box Properties */
+    width: 243.8872px;
+    height: 44.0232px;
+
+    /* Text and Font Properties */
+    font-size: 19.8139px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+
+    /* Position Properties */
+    position: relative;
+    top: 22.0116px;
+    z-index: 1;
+
+    /* Tranform Properties */
+    transform: translateY(-12.5%);
+
+    /* Colour Properties */
+    color: #666769;
+}
+
+input:not(:checked) + .user_toggleswitch p#student{
+    /* Colour Properties */
+    color: #ffffff;
+}
+
+#faculty{
+    /* Box Properties */
+    width: 243.8872px;
+    height: 44.0232px;
+
+    /* Text and Font Properties */
+    font-size: 19.8139px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+
+    /* Position Properties */
+    position: relative;
+    top: 22.0116px;
+    z-index: 1;
+
+    /* Tranform Properties */
+    transform: translateY(-12.5%);
+
+    /* Colour Properties */
+    color: #666769;
+}
+
+input:checked + .user_toggleswitch p#faculty{
+    /* Colour Properties */
+    color: #ffffff;
+}
+
+#switch_user_type{
+    /* Display Properties */
+    display: none;
+}
+
 .textinput{
     /* Box Properties */
     width: 482.6788px;
@@ -85,24 +192,6 @@ body{
     align-self: end;
 }
 
-/* label[for="submit_button"]{
-    Box Properties
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-
-    Display Property
-    display: inline-block;
-
-    Text and Font Properties
-    font-size: 10px;
-    font-family: Raleway;
-    text-align: center;
-
-    Colour Properties
-    background-color: #f5f3f5;
-} */
-
 #submit_button{
     /* Box Properties */
     width: 20px;
@@ -120,4 +209,18 @@ body{
 
     /* Colour Properties */
     background-color: #f5f3f5;
+}
+
+.adminlogin#adminlogin{
+    background-color: #666769;
+    width: 6vw;
+    height: 3vh;
+    margin-left: 10vw;
+    margin-top: 80vh;
+
+}
+
+.adminlogin#adminlogin a{
+    text-decoration: none;
+    color: white;
 }
