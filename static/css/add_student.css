@@ -1,0 +1,288 @@
+body{
+    /* Flex Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container{
+    /* Box Properties */
+    width: 90vw;
+    height: 210vh;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+
+    /* Colour Properties */
+    background-color: #ffffff;
+}
+
+.splashtext{
+    /* Box Properties */
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+
+    /* Text and FOnt Properties */
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Raleway;
+    text-align: center;
+}
+
+.detailing{
+    /* Box Properties */
+    margin: 3.5vw 7vw 3.5vw 7vw;
+}
+
+.detailing p{
+    /* Text and FOnt Properties */
+    font-size: 18px;
+    font-family: Raleway;
+    text-align: left;
+}
+
+.detailing hr{
+    border: 1px dashed black;
+    margin-bottom: 5vh;
+}
+
+.detail_form{
+    /* Box Properties */
+    width: inherit;
+    height: 168vh;
+
+    /* Grid Properties */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.detail_form label{
+    /* Box Properties */
+    margin: 0.1vh;
+
+    /* Text and Font Properties */
+    font-size: 18px;
+    font-family: Fira_Code;
+    text-align: left;
+}
+
+.detail_form input{
+    /* Box Properties */
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: none;
+    border-radius: 8vh;
+    margin: 0.4vh;
+
+    /* Text Properties */
+    font-size: 2vh;
+    font-family: Raleway;
+    text-align: left;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+    color: #666769;
+}
+
+.detail_form select{
+    /* Box Properties */
+    padding-left: 1vw;
+    border: none;
+    border-radius: 8vh;
+
+    /* Font and Text Properties */
+    font-size: 2vh;
+    font-family: Raleway;
+    text-align: left;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+}
+
+.detail_form textarea{
+    resize: none;
+    /* Box Properties */
+    padding: 1vw;
+    border: none;
+    border-radius: 4vh;
+
+    /* Font and Text Properties */
+    font-size: 2vh;
+    font-family: Raleway;
+    text-align: left;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+}
+
+.detail_form button{
+    /* Box Properties */
+    padding: 1vw;
+    border: none;
+    border-radius: 4vh;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+}
+
+.detail_form button a{
+    /* Font and Text Properties */
+    font-size: 3vh;
+    text-decoration: none;
+    text-align: center;
+
+    /* Colour Properties */
+    color: #666769;
+}
+
+.detail_form button a:visited{
+    /* Font and Text Properties */
+    text-decoration: none;
+
+    /* Colour Properties */
+    color: #666769;
+}
+
+label#student_name{ grid-area: 1 / 1 / 2 / 2 ; }
+
+input#student_name{ grid-area: 1 / 2 / 2 / 17; }
+
+label#student_contact{ grid-area: 2 / 1 / 3 / 3; }
+
+input#student_contact{ grid-area: 2 / 3 / 3 / 8 ; }
+
+label#student_dob{ grid-area: 2 / 8 / 3 / 9; }
+
+input#student_dob{ grid-area: 2 / 9 / 3 / 17; }
+
+label#student_email{ grid-area: 3 / 1 / 4 / 3; }
+
+input#student_email{ grid-area: 3 / 3 / 4 / 17; }
+
+label#student_blood{ grid-area: 4 / 1 / 5 / 3; }
+
+select#student_blood{ grid-area: 4 / 3 / 5 / 4; }
+
+label#student_health{ grid-area: 4 / 4 / 5 / 6; }
+
+input#student_health{ grid-area: 4 / 6 / 5 / 17 }
+
+label#student_address{ grid-area: 5 / 1 / 6 / 3; }
+
+textarea#student_address{ grid-area: 5 / 3 / 7 / 17; }
+
+/* Parents Details */
+
+label#father_name{ grid-area: 7 / 1 / 8 / 3; }
+
+input#father_name{ grid-area: 7 / 3 / 8 / 17; }
+
+label#father_contact{ grid-area: 8 / 1 / 9 / 3; }
+
+input#father_contact{ grid-area: 8 / 3 / 9 / 5; }
+
+label#father_email{ grid-area: 8 / 5 / 9 / 7; }
+
+input#father_email{ grid-area: 8 / 7 / 9 / 17; }
+
+label#mother_name{ grid-area: 9 / 1 / 10 / 3; }
+
+input#mother_name{ grid-area: 9 / 3 / 10 / 17; }
+
+label#mother_contact{ grid-area: 10 / 1 / 11 / 3; }
+
+input#mother_contact{ grid-area: 10 / 3 / 11 / 5; }
+
+label#mother_email{ grid-area: 10 / 5 / 11 / 7; }
+
+input#mother_email{ grid-area: 10 / 7 / 11 / 17; }
+
+label#guardian_name{ grid-area: 11 / 1 / 12 / 3; }
+
+input#guardian_name{ grid-area: 11 / 3 / 12 / 17; }
+
+label#guardian_contact{ grid-area: 12 / 1 / 13 / 3; }
+
+input#guardian_contact{ grid-area: 12 / 3 / 13 / 5; }
+
+label#guardian_email{ grid-area: 12 / 5 / 13 / 7; }
+
+input#guardian_email{ grid-area: 12 / 7 / 13 / 17; }
+
+label#branch_name{ grid-area: 13 / 1 / 14 / 2; }
+
+input#branch_name{ grid-area: 13 / 2 / 14 / 17; }
+
+label#course_name{ grid-area: 14 / 1 / 15 / 2; }
+
+input#course_name{ grid-area: 14 / 2 / 15 / 11; }
+
+label#regn_num{ grid-area: 14 / 11 / 15 / 12; }
+
+input#regn_num{ grid-area: 14 / 12 / 15 / 17; }
+
+label#y_admission{ grid-area: 15 / 1 / 16 / 3; }
+
+input#y_admission{ grid-area: 15 / 3 / 16 / 9; }
+
+label#y_current{ grid-area: 15 / 9 / 16 / 11; }
+
+input#y_current{ grid-area: 15 / 11 / 16 / 17; }
+
+label#category{ grid-area: 16 / 1 / 17 / 2; }
+
+input#category{ grid-area: 16 / 2 / 17 / 9; }
+
+label#type_cat{ grid-area: 16 / 9 / 17 / 11; }
+
+input#type_cat{ grid-area: 16 / 11 / 17 / 17; }
+
+label#subject{ grid-area: 17 / 6 / 18 / 9; }
+
+label#grades{ grid-area: 17 / 15 / 18 / 16; }
+
+label#password{ grid-area: 22 / 1 / 24 / 2;}
+
+input#password{ grid-area: 22/ 2/ 24/ 9;}
+
+textarea#subject{
+    grid-area: 18 / 1 / 21 / 14;
+    /* Box Properties */
+    border-top-left-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    border-top-right-radius: 0vh;
+    border-bottom-right-radius: 0vh;
+    border-right: 0.1vw solid #000000;
+
+    /* Text and Font Properties */
+    font-size: 3vh;
+    text-align: center;
+}
+
+textarea#grades{
+    grid-area: 18 / 14 / 21 / 17;
+    /* Box Properties */
+    border-top-left-radius: 0vh;
+    border-bottom-left-radius: 0vh;
+    border-top-right-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+    border-left: 0.1vw solid #000000;
+
+    /* Text and Font Properties */
+    font-size: 3vh;
+    text-align: center;
+}
+
+label#submit{ display: none; }
+
+input#submit{
+    grid-area: 21 / 16 / 22 / 17;
+    /* Text and Font Properties */
+    font-size: 3vh;
+    text-align: center;
+}

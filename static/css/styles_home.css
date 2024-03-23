@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* Box Properties */
+    width: 100vw;
+    height: 100vh;
+
+    /* Colour Properties */
+    background-color: #f5f3f5;
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: 'Amaranth', sans-serif;
+  }
+  
+  .prheader {
+    text-align: center;
+  }
+  
+  .header {
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  .pr {
+    font-size: 24px;
+    color: black;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  .profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: black 10px solid;
+    background: white;
+    margin-right: 40px;
+  }
+  
+  .detail {
+    text-align: left;
+    font-family: Fira Code;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .detail div {
+    margin-bottom: 45px;
+    padding:10px;
+    font-size: 20px;
+  }
+  
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+h2{
+  margin-top: 50vh;
+  margin-left: 5vw;
+}
+
+table{
+  font-size: 50px;
+  height: 50px;
+  margin-top: 55vh;
+  margin-left: -11vw;
+}
+
+table tr td{
+  border: black 1px solid;
+  width: 100px;
+  height: 50px;
+}
+
+.print#print{
+  height: 4vh;
+  background-color: #666;
+  width: 10vw;
+  margin-top: 80vh;
+  margin-left: -11vw;
+}
+
+.print#print a{
+  text-decoration: none;
+  color: #dcdcdc;
+}
