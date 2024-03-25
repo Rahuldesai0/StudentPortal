@@ -93,7 +93,7 @@ def add_registration():
         subject = request.form.get('Course Subjects')
         grades = request.form.get('Course Grades')
 
-        cur.execute('INSERT INTO Student_Details (name, id, contact, dob, email_id, blood_group, condition, address, password, father_name, father_email, father_contact, mother_name, mother_email, mother_contact, guardian_name, guardian_email, guardian_contact, branch_id, course_id, adm_year, category, type, subjects, grades) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',(name, id, contact, dob, email, blood_group, condition, address, hashed_password, father_name, father_email, father_contact, mother_name, mother_email, mother_contact, guardian_name, guardian_email, guardian_contact, branch_id, course_id, adm_yr, category, type, subject, grades))
+        cur.execute('INSERT INTO Student_Details (name, id, contact, dob, email_id, blood_group, condition, address, password, father_name, father_email, father_contact, mother_name, mother_email, mother_contact, guardian_name, guardian_email, guardian_contact, branch_id, course_id, adm_year, category, type, subjects, grades) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',(name, idno, contact, dob, email, blood_group, condition, address, hashed_password, father_name, father_email, father_contact, mother_name, mother_email, mother_contact, guardian_name, guardian_email, guardian_contact, branch_id, course_id, adm_yr, category, type, subject, grades))
         conn.commit()
 
         return "Registered successfully"    
